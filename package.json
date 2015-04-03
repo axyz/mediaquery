@@ -1,0 +1,27 @@
+{
+  "name": "mediaquery",
+  "version": "0.0.1",
+  "description": "turns human readable breakpoints into correct mediaqueries",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha",
+    "build": "cp ./lib/mediaquery.js dist && cat ./lib/mediaquery.js | ./node_modules/.bin/uglifyjs -c > dist/mediaquery.min.js"
+  },
+  "keywords": [
+    "mediaquery",
+    "mediaqueries",
+    "responsive",
+    "breakpoints",
+    "step",
+    "media",
+    "css"
+  ],
+  "author": "Andrea Moretti <axyzxp@gmail.com> (@axyz)",
+  "license": "MIT",
+  "devDependencies": {
+    "browserify": "^9.0.7",
+    "chai": "^2.2.0",
+    "mocha": "^2.2.1",
+    "uglify-js": "^2.4.19"
+  }
+}
