@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.org/axyz/mediaquery.svg?branch=master)](https://travis-ci.org/axyz/mediaquery)
-[![Coverage Status](https://coveralls.io/repos/axyz/mediaquery/badge.svg)](https://coveralls.io/r/axyz/mediaquery)
+[![Coverage Status](https://coveralls.io/repos/axyz/mediaquery/badge.svg?branch=master)](https://coveralls.io/r/axyz/mediaquery?branch=master)
 ![Dependencies Status](https://david-dm.org/axyz/mediaquery.svg)
 
 # mediaquery
