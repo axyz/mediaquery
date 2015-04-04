@@ -1,6 +1,6 @@
 {
   "name": "mediaquery",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "turns human readable breakpoints into correct mediaqueries",
   "main": "index.js",
   "homepage": "https://github.com/axyz/mediaquery",
