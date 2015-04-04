@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/axyz/mediaquery.svg?branch=master)](https://travis-ci.org/axyz/mediaquery)
+
 # mediaquery
 Turns human readable breakpoints into correct mediaqueries.
 
