@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/axyz/mediaquery.svg?branch=master)](https://travis-ci.org/axyz/mediaquery)
 [![Coverage Status](https://coveralls.io/repos/axyz/mediaquery/badge.svg)](https://coveralls.io/r/axyz/mediaquery)
-[![Dependencies Status](https://david-dm.org/axyz/mediaquery.svg)]
+![Dependencies Status](https://david-dm.org/axyz/mediaquery.svg)
 
 # mediaquery
 Turns human readable breakpoints into correct mediaqueries.
