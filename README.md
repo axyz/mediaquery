@@ -4,6 +4,8 @@
 [![Code Climate](https://codeclimate.com/github/axyz/mediaquery/badges/gpa.svg)](https://codeclimate.com/github/axyz/mediaquery)
 
 # mediaquery
+
+[![Join the chat at https://gitter.im/axyz/mediaquery](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/axyz/mediaquery?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 Turns human readable breakpoints into correct mediaqueries.
 
 This is particularly useful when working with
