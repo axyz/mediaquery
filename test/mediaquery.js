@@ -199,6 +199,14 @@ describe('mediaquery', function () {
     it('should convert the object to proper media queries', function () {
       expect(MQ.asArray(input)).to.be.eql(output);
     });
+
+    it('should handle empty object case', function () {
+      expect(MQ.asArray({})).to.be.eql([]);
+    });
+
+    it('should handle only custom queries case', function () {
+      expect(MQ.asArray({default: 'all'})).to.be.eql([['default', 'all']]);
+    });
   });
 
   describe('mediaquery.asObject', function () {
