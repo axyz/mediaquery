@@ -13,6 +13,7 @@ var MQ = {
   },
 
   getBreakPoints: function getBreakPoints(obj) {
+    if (obj === {}) return obj;
     return Object.keys(obj).reduce(function (prev, next) {
       if (typeof obj[next] === 'number') {
         prev[next] = obj[next];
@@ -22,6 +23,7 @@ var MQ = {
   },
 
   getCustomQueries: function getCustomQueries(obj) {
+    if (obj === {}) return obj;
     return Object.keys(obj).reduce(function (prev, next) {
       if (typeof obj[next] === 'string') {
         prev[next] = obj[next];
@@ -31,6 +33,7 @@ var MQ = {
   },
 
   _toSortedArray: function _toSortedArray(obj) {
+    if (obj === {}) return [];
     return Object.keys(obj).map(function (el) {
       return [el, obj[el]];
     }).sort(function (a, b) {
@@ -39,20 +42,22 @@ var MQ = {
   },
 
   _makeSteps: function _makeSteps(arr) {
+    if (!arr.length) return [];
     return (arr[arr.length - 1][1] === Infinity)
       ? arr
       : arr.concat([Infinity]);
   },
 
   _translate: function _translate(arr) {
+    if (arr === []) return arr;
     return arr.map(function (el, index) {
       return (index === 0)
         ? [el[0], 'screen and (max-width: ' + el[1] + 'px)']
         : (index === arr.length - 1)
-          ? [(el[0] || 'default'), 'screen and (min-width: '
-            + (arr[index - 1][1] + 1) + 'px)']
-          : [el[0], 'screen and (min-width: ' + (arr[index-1][1] + 1)
-            + 'px) and (max-width: ' + el[1] + 'px)']
+          ? [(el[0] || 'default'), 'screen and (min-width: ' +
+            (arr[index - 1][1] + 1) + 'px)']
+          : [el[0], 'screen and (min-width: ' + (arr[index-1][1] + 1) +
+            'px) and (max-width: ' + el[1] + 'px)'];
     });
   },
 
